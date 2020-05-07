@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: pink;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#container{    
+    width: 80%;
+    height: 700px; 
+    display: flex;
+    justify-content: center;   
+    margin-left: 10%;
+    margin-right: 10%;    
+    background-color: whitesmoke;    
+}
+
+#container-gameboy{
+    width: 370px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;    
+    margin-top: 5%;    
+    background-color: #dcd9d6;
+    border-radius: 10px 10px 100px 10px;
+    padding: 3px;
+}
+
+/*DETALLE DE ENCABEZADO*/
+#container-head{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;    
+    border-bottom: 4px solid #908d91;      
+}
+
+.square{   
+    width: 30px;
+    height: 30px;
+}
+
+.square1{    
+    border-right: 4px solid #908d91;
+}
+.square2{
+    border-left: 4px solid #908d91;
+}
+
+/*SCREEN*/
+
+#container-display{
+    width: 80%;
+    height: 200px;
+    margin: 12px 10%;
+    display: flex;
+    flex-direction: column;
+    background-color: #908d91;
+    border-radius: 10px 10px 70px 10px;
+    border-top: 1px solid #747075;
+    border-right: 1px solid #747075;
+    padding: 4px;
+}
+
+#display-head{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lines{
+    width: 70px;
+    height: 5px; 
+    border-top: 1px solid #cc0000;
+    border-bottom: 1px solid #0000ff;
+}
+
+.lines-right{
+    width: 30px;
+}
+
+.text {
+    color: white;
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+
+#display-body{
+    width: 90%;
+    height: 145px;
+    display: flex;   
+    justify-content: space-around; 
+    margin-top: 10px;
+}
+
+#battery{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#light-battery{
+    width: 8px;
+    height: 8px;
+    background: rgb(151,152,154);
+    background: linear-gradient(117deg, rgba(151,152,154,1) 0%, rgba(238,238,240,1) 0%, rgba(255,255,255,1) 0%, rgba(130,130,130,1) 6%, rgba(0,0,0,1) 100%);
+    border-radius: 100px;
+}
+.text-battery{
+    font-size: 0.5em;
+    letter-spacing: 2px;    
+}
+#screen{
+    width: 70%;    
+    height: 140px;
+    background-color: #7f9f50;
+    box-shadow: #404040 3px 3px 7px inset;
+}
+
+/*LOGO NINTENDO GAMEBOY*/
+#container-img{
+    width: 80%;
+    height: 30px;
+    background-color: aquamarine;
+}
+#logo{}
+
+
+#container-controls{}
+
+#controls-play{}
+
+#controls-directions{}
+#control-cross{}
+.direction {}
+.direction-up{}
+.direction-left{}
+.direction-down{}
+.direction-right{}
+
+.triangle {}
+.triangle-up{}
+.triangle-left{}
+.triangle-down{}
+.triangle-right{}
+
+.button-direction {}
+.up{}
+.left{}
+.down{}
+.right{}
+
+
+#controls-buttons{}
+#box-buttons-red{}
+.button {}
+.buttonB{}
+.buttonA{}
+#box-text-buttons-red{}
+.text-b{}
+.text-a{}
+
+
+#controls-options{}
+#controls-selects{}
+.button-options {}
+.select{}
+.text-select{}
+.start{}
+.text-start{}
+#audio-detail{}
+#output{}
+.audio{}
+.output1{}
+.output2{}
+.output3{}
+.output4{}
+
+
+#container-foot{}
+#phones{}
+#detail-lines-phones{}
