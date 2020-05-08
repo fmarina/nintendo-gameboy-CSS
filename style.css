@@ -6,6 +6,7 @@ body{
     font-size: 12px;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    min-width: 370px;
 }
 
 #container{    
@@ -14,8 +15,7 @@ body{
     display: flex;
     justify-content: center;   
     margin-left: 10%;
-    margin-right: 10%;    
-    background-color: whitesmoke;    
+    margin-right: 10%;  
 }
 
 #container-gameboy{
@@ -27,6 +27,8 @@ body{
     background-color: #dcd9d6;
     border-radius: 10px 10px 100px 10px;
     padding: 3px;
+    box-shadow: rgb(160, 159, 159) 3px -3px 3px inset;
+    border-right: 1px solid rgb(161, 160, 160);
 }
 
 /*DETALLE DE ENCABEZADO*/
@@ -35,7 +37,7 @@ body{
     height: 30px;
     display: flex;
     justify-content: space-between;    
-    border-bottom: 4px solid #908d91;      
+    border-bottom: 4px solid #aca8ad;      
 }
 
 .square{   
@@ -44,10 +46,10 @@ body{
 }
 
 .square1{    
-    border-right: 4px solid #908d91;
+    border-right: 4px solid #aca8ad;
 }
 .square2{
-    border-left: 4px solid #908d91;
+    border-left: 4px solid #aca8ad;
 }
 
 /*SCREEN*/
@@ -59,7 +61,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #908d91;
-    border-radius: 10px 10px 70px 10px;
+    border-radius: 10px 10px 50px 10px;
     border-top: 1px solid #747075;
     border-right: 1px solid #747075;
     padding: 4px;
@@ -128,62 +130,272 @@ body{
 #container-img{
     width: 80%;
     height: 30px;
-    background-color: aquamarine;
+    margin-left: 20px;
 }
-#logo{}
+#logo{
+    width: 200px;
+    margin-top: -50px;    
+}
 
 
-#container-controls{}
+/*CONTROLES JUEGO*/
 
-#controls-play{}
+#container-controls{
+    height: 300px;
+    /* background-color: rgba(128, 212, 255, 0.5); */
+    display: flex;
+    flex-direction: column;   
+    border-radius: 10px 10px 100px 10px; 
+}
 
-#controls-directions{}
-#control-cross{}
-.direction {}
-.direction-up{}
-.direction-left{}
-.direction-down{}
-.direction-right{}
+#controls-play{
+    height: 180px;
+    display: flex;
+}
 
-.triangle {}
-.triangle-up{}
-.triangle-left{}
-.triangle-down{}
-.triangle-right{}
+/*CONTROL DIRECCIONES CRUZ*/
 
-.button-direction {}
-.up{}
-.left{}
-.down{}
-.right{}
+#controls-directions{    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cross{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: #cac8c6 -5px -5px 15px inset;
+}
+
+.box {
+    width: 100px;
+    height: 40px;
+}
+
+.box-up, .box-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-center{
+    width: 110px;
+    display: flex;    
+    justify-content:center;
+    align-items: center;
+}
+
+.direction{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.direction-center{
+    display: flex;
+    justify-content: center;
+}
+
+#circle{
+    width: 38px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #262827;    
+}
+
+.button-direction {
+    width: 30px;
+    height: 30px;    
+    background-color: #262827; 
+}
+
+.up{    
+    margin-bottom: -5px;    
+    box-shadow: grey 3px 1px 3px inset;    
+}
+
+.down{
+    margin-top: -5px;        
+}
+
+.left{    
+    margin-right: -5px;  
+    border-bottom: 1px solid #000; 
+    box-shadow: grey 3px 0px 3px inset;
+}
+
+.right{
+    margin-left: -5px;
+    box-shadow: rgb(90, 90, 90) -3px -3px 3px inset;  
+}
+
+.up, .down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: space-around;
+}
+
+.left, .right{
+    display: flex;
+    align-items: center;   
+    justify-content: space-around;
+}
+
+.line-row{
+    width: 20px;
+    height: 3px;
+    background-color: rgb(59, 57, 57);
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.line-column{
+    width: 3px;
+    height: 20px;
+    background-color: rgb(59, 57, 57);
+    border-radius: 10px;
+    margin-bottom: 3px;
+}
+
+.triangle {
+  width: 0; 
+  height: 0; 
+  border-left: 7px solid #bdbab7;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;  
+}
+.triangle-up{ transform: rotate(-90deg); }
+.triangle-left{ transform: rotate(180deg);}
+.triangle-down{ transform: rotate(90deg); }
+
+/* FIN CONTROL DIRECCIONES*/
+
+/* BOTONES ROJOS A Y B*/
+
+#controls-buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;    
+    transform: rotate(-15deg);
+}
+
+#box-buttons-red{
+    display: flex;  
+    align-self: flex-end;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    margin-top:80px;
+    border-radius: 100px;
+    background-color: rgba(154, 150, 146, 0.2);
+    box-shadow: #9a9692 1px 1px 5px inset;
+}
+
+.button{
+  margin: 7px 10px;
+  width: 30px;
+  height: 30px;  
+  background-color: #9a2056;
+  border-radius: 100%;
+  border-right: 1px solid  #dc5692;
+  box-shadow: #581130 3px 3px 3px;
+}
+
+#box-text-buttons-red{
+    display: flex;  
+    margin-right: 17px;    
+}
+
+.text-b, .text-a{
+    margin-top: -10px;
+    margin-right: 40px;
+    color: #393c9f;
+    font-size: 1em;
+    font-family: 'Righteous', cursive;
+}
 
 
-#controls-buttons{}
-#box-buttons-red{}
-.button {}
-.buttonB{}
-.buttonA{}
-#box-text-buttons-red{}
-.text-b{}
-.text-a{}
+
+/*BOTON SELECT Y START*/
+
+#controls-options{  
+    display: flex;  
+    height: 80px;    
+    margin-bottom: 0px;
+    border-radius: 10px 10px 100px 10px;
+}
+
+#controls-selects{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    height: 100px;    
+    transform: rotate(-20deg);
+}
+
+.button-options {    
+    margin: 20px 5px;
+    width: 40px;
+    height: 12px;
+    background-color: #827b7f;
+    /* box-shadow: #383436 2px 2px 2px; */
+    box-shadow: #b1b0ad 5px -3px 5px;
+    border-radius: 10px;   
+    border-top: 1px solid rgb(209, 209, 209);
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#controls-selects .text{
+    margin-top: -15px;
+    color: #393c9f;
+    font-size: 1em;
+    font-family: 'Righteous', cursive;
+}
+
+#box-select{
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+#box-start{
+    align-self: center;
+}
 
 
-#controls-options{}
-#controls-selects{}
-.button-options {}
-.select{}
-.text-select{}
-.start{}
-.text-start{}
-#audio-detail{}
-#output{}
-.audio{}
-.output1{}
-.output2{}
-.output3{}
-.output4{}
+/*RANURAS DE AUDIO*/
 
+#audio-detail{
+    width: 50%;
+    height: 80px;    
+}
 
-#container-foot{}
-#phones{}
-#detail-lines-phones{}
+#output{
+    margin-right: 20px;
+    height: 90%;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transform:  translateY(10px) rotate(-25deg);
+}
+.audio{
+    align-self: flex-end;
+    width: 8px;
+    height: 60px;
+    background-color: #9e9a96;  
+    margin-left: 10px;
+    border-radius: 10px;
+    border-left: 1px solid #a9a29f;   
+    border-right: 2px solid white;
+    box-shadow: #6b6867 2px 3px 3px inset;
+}

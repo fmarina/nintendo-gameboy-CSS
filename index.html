@@ -32,7 +32,7 @@
             </div>
 
             <div id="container-img">
-                <!-- <img id="logo" src="https://www.logolynx.com/images/logolynx/f5/f5bc0e352af6fd10eeddb1a190d8013b.png" alt="nintendo gameboy"> -->
+                <img id="logo" src="https://www.logolynx.com/images/logolynx/f5/f5bc0e352af6fd10eeddb1a190d8013b.png" alt="nintendo gameboy">
             </div>
 
             <div id="container-controls">
@@ -40,23 +40,52 @@
                 <div id="controls-play">
                     <!-- CONTROL DE DIRECCIONES - CRUZ -->
                     <div id="controls-directions">
-                        <div id="control-cross">
-                            <div class="direction direction-up">
+                        <div id="cross">
+
+                            <div class="box box-up">
                                 <div class="triangle triangle-up"></div>
-                                <div class="button-direction up"></div>
+                                <div class="button-direction up">
+                                    <div class="line-row"></div>
+                                    <div class="line-row"></div>
+                                    <div class="line-row"></div>
+                                </div>
                             </div>
-                            <div class="direction direction-left">
-                                <div class="triangle triangle-left"></div>
-                                <div class="button-direction left"></div>
+
+                            <div class="box box-center">
+                                <div class="direction direction-left">
+                                    <div class="triangle triangle-left"></div>
+                                    <div class="button-direction left">
+                                        <div class="line-column"></div>
+                                        <div class="line-column"></div>
+                                        <div class="line-column"></div>
+                                    </div>
+                                </div>
+
+                                <div class="direction-center">
+                                    <div id="circle"></div>
+                                </div>  
+
+                                <div class="direction direction-right">
+                                    <div class="button-direction right">
+                                        <div class="line-column"></div>
+                                        <div class="line-column"></div>
+                                        <div class="line-column"></div>
+                                    </div>
+                                    <div class="triangle triangle-right"></div>
+                                </div>
                             </div>
-                            <div class="direction direction-down">
+
+                            <div class="box box-down">
+                                <!-- <div class="direction direction-down"> -->
+                                <div class="button-direction down">
+                                    <div class="line-row"></div>
+                                    <div class="line-row"></div>
+                                    <div class="line-row"></div>
+                                </div>
                                 <div class="triangle triangle-down"></div>
-                                <div class="button-direction down"></div>
+                                <!-- </div> -->
                             </div>
-                            <div class="direction direction-right">
-                                <div class="triangle triangle-right"></div>
-                                <div class="button-direction right"></div>
-                            </div>
+                            
                         </div>
                     </div>
                     <!-- BOTONES B Y A -->
@@ -66,18 +95,23 @@
                             <div class="button buttonA"></div>
                         </div>
                         <div id="box-text-buttons-red">
-                            <div class="text text-b"></div>
-                            <div class="text text-a"></div>
+                            <div class="text text-b"><h3>b</h3></div>
+                            <div class="text text-a"><h3>a</h3></div>
                         </div>
                     </div>
                 </div>
                 <!-- BOTONES SELECT, START Y SALIDA DE AUDIO  -->
                 <div id="controls-options">
                     <div id="controls-selects">
-                        <div class="button-options select"></div>
-                        <div class="text text-select"></div>
-                        <div class="button-options start"></div>
-                        <div class="text text-start"></div>
+                        <div id="box-select">
+                            <div class="button-options select"></div>
+                            <div class="text text-select"><h3>select</h3></div>
+                        </div>
+
+                        <div id="box-start">
+                            <div class="button-options start"></div>
+                            <div class="text text-start"><h3>start</h3></div>
+                        </div>
                     </div>
                     
                     <div id="audio-detail">
@@ -86,17 +120,13 @@
                             <div class="audio output2"></div>
                             <div class="audio output3"></div>
                             <div class="audio output4"></div>
+                            <div class="audio output5"></div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            <!-- DETALLE DE PHONES -->
-            <div id="container-foot">
-                <div id="phones"></div>
-                <div id="detail-lines-phones"></div>
-            </div>
-
+            
         </div>
     </div>
     
